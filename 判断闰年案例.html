@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    // 核心算发：能够被4整除且不能被100整除的为闰年，或者能够被400整除的就是闰年
+    var year = prompt("请你输入年份");
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+      alert("你输入的年份是闰年");
+    } else {
+      alert("你输入的年份是平年");
+    }
+
+    // 判断是否中奖
+    var youName = prompt("请输入你的名字");
+    if (youName == "刘德华") {
+      alert("感谢您中5元");
+    } else {
+      alert("没有中奖");
+    }
+  </script>
+  <body></body>
+</html>
