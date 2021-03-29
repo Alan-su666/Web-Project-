@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      /* 背景渐变 */
+      background: linear-gradient(
+        to left,
+        rgb(238, 92, 92),
+        rgb(154, 127, 250)
+      );
+    }
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .box_a {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      top: 150px;
+    }
+
+    .box_b {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      border-radius: 20px;
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.2)
+      );
+      /* 背景模糊化 */
+      backdrop-filter: blur(11px);
+      border-top: 1px solid rgba(255, 255, 255, 0.8);
+      border-left: 1px solid rgba(255, 255, 255, 0.8);
+    }
+    .box_b span {
+      font: 900 50px "";
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      color: rgba(0, 0, 0, 0.5);
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+    }
+    .box_b p {
+      font: 900px 25px "";
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      color: rgba(255, 255, 255, 0.3);
+      /* 设置字体间距 */
+      letter-spacing: 3px;
+    }
+    .box_c {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background-color: rgb(240, 160, 0);
+      position: absolute;
+      top: 160px;
+      left: -40px;
+      z-index: -99;
+    }
+    .box_d {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #77fdd7;
+      position: absolute;
+      top: -80px;
+      left: 260px;
+      z-index: -99;
+    }
+  </style>
+  <body>
+    <div class="box_a">
+      <div class="box_b">
+        <span>GOAT</span>
+        <p>2021-3-29/Attitude to life</p>
+      </div>
+      <div class="box_c"></div>
+      <div class="box_d"></div>
+    </div>
+  </body>
+</html>
